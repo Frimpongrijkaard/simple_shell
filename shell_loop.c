@@ -72,8 +72,6 @@ int find_builtin(info_t *info)
 			built_in_ret = builtintbl[i].func(info);
 			break;
 		}
-	
-
 
 	return (built_in_ret);
 }
