@@ -1,1 +1,1 @@
-This task about simple shell been perform by me
+README.md - description about the project repo
