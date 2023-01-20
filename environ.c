@@ -70,8 +70,10 @@ int _myunsetenv(info_t *info)
 	}
 	for (i = 1; i <= info->argc; i++)
 		_unsetenv(info, info->argv[i]);
+
 	return (0);
 }
+
 /**
  * populate_env_list - populates env linked list
  * @info: Structure containing potential arguments. Used to maintain

@@ -27,6 +27,7 @@ int _erratoi(char *s)
 	}
 	return (result);
 }
+
 /**
  * print_error - prints an error message
  * @info: the parameter & return info struct
@@ -44,6 +45,7 @@ void print_error(info_t *info, char *estr)
 	_eputs(": ");
 	_eputs(estr);
 }
+
 /**
  * print_d - function prints a decimal (integer) number (base 10)
  * @input: the input
@@ -103,12 +105,13 @@ char *convert_number(long int num, int base, int flags)
 	{
 		n = -num;
 		sign = '-';
+
 	}
 	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr = &buffer[49];
 	*ptr = '\0';
 
-	do      {
+	do	{
 		*--ptr = array[n % base];
 		n /= base;
 	} while (n != 0);

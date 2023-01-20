@@ -12,10 +12,12 @@ int _strlen(char *s)
 
 	if (!s)
 		return (0);
+
 	while (*s++)
 		i++;
 	return (i);
 }
+
 /**
  * _strcmp - performs lexicogarphic comparison of two strangs.
  * @s1: the first strang
@@ -52,6 +54,7 @@ char *starts_with(const char *haystack, const char *needle)
 			return (NULL);
 	return ((char *)haystack);
 }
+
 /**
  * _strcat - concatenates two strings
  * @dest: the destination buffer
@@ -69,4 +72,4 @@ char *_strcat(char *dest, char *src)
 		*dest++ = *src++;
 	*dest = *src;
 	return (ret);
-
+}
